@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: large;
+    color: white;
+    margin: 10px;
+    width: 95%;
+}
+footer {
+    z-index: 3;
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    color: white;
+    background-color: black;
+    border: 3px solid rgba(150, 150, 150, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+footer p {
+    margin: 0px;
+}
+
+/* NavLink styling, available to global app */
+nav {
+    display: flex;
+    z-index: 5;
+    top: 130px;
+    position: fixed;
+    width: 95%;
+    color: black;
+    background-color: black;
+    border: 3px solid rgba(150, 150, 150, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* margin-top: 15px; */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: 3px solid rgba(150, 150, 150, 1);
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav a.active {
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+nav a:visited {
+    color:black;
+}
+
+/* Main styles */
+main {
+    width: 100%;
+    z-index: 1;
+    border: 3px solid rgba(150, 150, 150, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 215px;
+    margin-bottom: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+main :link {
+    color: white;
+    text-decoration: none;
+}
+hr {
+    background-color: rgba(150, 150, 150, 1);
+    height: 3px;
+    border: none;
+}
+
+/* Link styles */
+:visited {
+    color: greenyellow;
+}
+:visited:hover {
+    color: darkgreen;
+}
+:link:hover {
+    color: darkgreen;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: small;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: x-small;
+    }
+}

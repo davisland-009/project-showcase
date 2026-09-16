@@ -1,0 +1,54 @@
+.notifications {
+  max-width: 750px;
+  z-index: 2;
+}
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.5rem;
+}
+.info {
+  color: blue;
+  background-color: greenyellow;
+  border-color: white;
+}
+.error {
+  color: red;
+  background-color: greenyellow;
+  border-color: white;
+}
+.success {
+  color: darkgreen;
+  background-color: greenyellow;
+  border-color: white;
+}
+.warning {
+  color: brown;
+  background-color: greenyellow;
+  border-color: white;
+}
+.message {
+  font-size: medium;
+  margin-right: 1rem;
+}
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.clear-notification {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(150, 150, 150, 1);
+  color: black;
+}
+.clear-notification:hover {
+  background-color: red;
+}

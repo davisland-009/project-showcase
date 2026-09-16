@@ -1,0 +1,89 @@
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+/* View & Notification & Search bar */
+.utility-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tile styling */
+.product-tiles {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Table styling */
+.product-table {
+  justify-items: center;
+}
+.product-table table {
+  width: 90%;
+  border-collapse: collapse;
+  padding: 1rem;
+  margin: 2rem;
+}
+.product-table td {
+  padding: 1rem;
+  text-align: left;
+}
+.product-table tr {
+  margin: 0.5rem;
+  border-bottom: 3px solid rgba(150, 150, 150, 1);
+}
+
+/* View Icons */
+.view-icon {
+  font-size: 1.5rem;
+  margin-right: 7px;
+  padding: 3px;
+  color: rgba(150, 150, 150, 1);
+  border-radius: 3px;
+}
+.view-icon.active {
+  background-color: darkgreen;
+}
+.view-icon:not(.active) {
+  font-size: 1.5rem;
+  margin-right: 7px;
+  padding: 3px;
+  cursor: pointer;
+}
+.view-icon:not(.active):hover {
+  color: greenyellow;
+  background-color: rgba(150, 150, 150, 1);
+}
+
+/* Cart Icon */
+.cart-icon {
+  font-size: 1.5em;
+  padding: 3px;
+  color: darkgreen;
+  border-radius: 3px;
+}
+.cart-icon:hover {
+  color: greenyellow;
+  background-color: rgba(150, 150, 150, 1);
+  cursor: pointer;
+}
+
+/* Class for hiding stuff */
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: small;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: x-small;
+    }
+}

@@ -1,0 +1,42 @@
+.search-component {
+    display: flex;
+    margin-left: 7px;
+}
+
+.search-button {
+    
+    background-color: black;
+    border: solid 1px rgba(150, 150, 150, 1);
+    margin-left: 5px;
+}
+
+.magnifying-glass {
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 3px;
+    color: darkgreen;
+    background-color: black;
+    border-radius: 3px;
+}
+.magnifying-glass:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.clear-searchterm-button {
+  background-color: black;
+  border: none;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.clear-searchterm {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(150, 150, 150, 1);
+  color: black;
+}
+.clear-searchterm:hover {
+  background-color: red;
+}

@@ -1,0 +1,21 @@
+.loginForm {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  row-gap: 10px;
+}
+
+.notification {
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: small;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: x-small;
+    }
+}

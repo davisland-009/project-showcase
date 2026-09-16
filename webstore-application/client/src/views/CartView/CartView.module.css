@@ -1,0 +1,105 @@
+/* Cart View grid */
+.cart-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "greet greet"
+  "tab tab"
+  "empty tot"
+  "empty trash"
+  ;
+  justify-items: center;
+}
+.cart-view h2 {
+  grid-area: greet;
+  font-weight: normal;
+}
+.cart-view table {
+  grid-area: tab;
+}
+.cart-view section {
+  grid-area: tot;
+  text-align: right;
+  justify-self: right;
+  padding-right: 3em;
+}
+.cart-view .space{
+  grid-area: empty;
+}
+
+/* Table format */
+.cart-view table {
+  text-align: right;
+  width: 90%;
+  border-collapse: collapse;
+  padding: 1rem;
+  margin: 2rem;
+}
+.cart-view table .left {
+  text-align: left;
+}
+.cart-view table .center {
+  text-align: center;
+}
+.cart-view table thead {
+  text-align: center;
+  color: greenyellow;
+  font-weight: bold;
+  font-size: larger;
+}
+.cart-view td {
+  padding: 1rem;
+}
+.cart-view tr {
+  margin: 0.5rem;
+  border-bottom: 3px solid rgba(150, 150, 150, 1);
+}
+
+/* Remove Icon */
+.xmark-icon {
+  font-size: 1.5rem;
+  padding: 3px;
+  color: rgba(150, 150, 150, 1);
+  border-radius: 3px;
+}
+.xmark-icon:hover {
+  color: red;
+  background-color: rgba(150, 150, 150, 1);
+}
+
+/* Clear Cart Icon */
+.trash-can-icon {
+  grid-area: trash;
+  font-size: 1.5rem;
+  padding: 3px;
+  color: rgba(150, 150, 150, 1);
+  border-radius: 3px;
+  justify-self: right;
+  margin-right: 2em;
+}
+.trash-can-icon:hover {
+  color: red;
+  background-color: rgba(150, 150, 150, 1);
+}
+
+/* Notification */
+.notification {
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .cart-view table {
+        font-size: small;
+    }
+    .cart-view table thead {
+        font-size: small;
+    }
+}
+@media (max-width: 450px) {
+    .cart-view table {
+        font-size: x-small;
+    }
+    .cart-view table thead {
+        font-size: x-small;
+    }
+}

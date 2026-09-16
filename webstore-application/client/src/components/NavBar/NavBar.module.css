@@ -1,0 +1,14 @@
+nav a.login {
+    font-weight: bold;
+}
+
+/* nav {
+    display: flex;
+    position: fixed;
+    width: 95%;
+    background-color: black;
+} */
+
+.spacer {
+    flex-grow: 1;
+}
